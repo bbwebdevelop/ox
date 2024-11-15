@@ -24,6 +24,6 @@ Ten projekt generuje semantyczny i strukturalny kod HTML dla artykułu na temat 
 2. Zainstaluj zalezności: npm install
 3. Ustaw klucz API: W katalogu głównym projektu utwórz plik .env i wklej do niego swój klucz API:
 OPENAI_API_KEY=twój_klucz_api_tutaj
-4. Uruchom generowanie HTML: Aby wygenerować plik artykul.html z pliku artykul.txt, uruchom poniższe polecenie: node.index.js
+4. Uruchom generowanie HTML: Aby wygenerować plik artykul.html z pliku artykul.txt, uruchom poniższe polecenie: node index.js
 To polecenie wygeneruje plik artykul.html, który zawiera cały artykuł w formacie HTML.
 5. Podgląd artykułu: Otwórz plik podglad.html w przeglądarce, aby zobaczyć wstępny podgląd artykułu z zastosowanym stylem CSS.
