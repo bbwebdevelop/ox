@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oxido/Podglad/bbwebdevelop</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #333;
+        background: radial-gradient(
+            circle at 50% 50%,
+            rgba(140, 69, 255, 0.3),
+            rgba(14, 0, 36, 0.9)
+          ),
+          radial-gradient(
+            circle at 20% 80%,
+            rgba(255, 255, 255, 0.05),
+            transparent 70%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 255, 255, 0.05),
+            transparent 70%
+          );
+        background-color: #0a0b14;
+        line-height: 1.7;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        word-spacing: 0.05em;
+      }
+
+      .text-gradient {
+        font-weight: 600;
+        line-height: 1.15;
+        background: radial-gradient(
+          circle at top left,
+          white 0%,
+          white 70%,
+          rgba(240, 235, 255, 0.9) 85%,
+          rgba(220, 210, 245, 0.8) 100%
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 4em;
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        letter-spacing: -4px;
+        word-spacing: 4px;
+      }
+
+      h2 {
+        font-size: 3.2em;
+        letter-spacing: -3.2px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: #b5b7c9;
+        margin: 15px 0;
+        padding: 0 15px;
+        text-align: left;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+        margin-bottom: 1.5em;
+        font-weight: 300;
+      }
+
+      em {
+        font-weight: 100;
+        color: #b5b7c985;
+        font-style: normal;
+        letter-spacing: -1px;
+      }
+
+      a {
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      span {
+        -webkit-text-stroke: 0.2px;
+        font-weight: 600;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 1px 0.5px rgba(173, 216, 230, 0.5);
+      }
+
+      .icon-inline {
+        width: 16px;
+        height: 16px;
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.2em;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      a .icon-inline {
+        text-decoration: none;
+        border: none;
+       
+      }
+      a img,
+      a svg {
+        text-decoration: none;
+        border: none;
+      }
+
+      svg {
+        display: inline;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 3.2em;
+          letter-spacing: -3px;
+        }
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: -3px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-gradient">
+        Sztuczna inteligencja: <br />wpływ i wyzwania
+      </h1>
+
+      <p>
+        Sztuczna inteligencja to dziedzina nauki i technologii zajmująca się
+        tworzeniem maszyn i programów zdolnych do wykonywania zadań wymagających
+        ludzkiej inteligencji, takich jak uczenie się, rozumienie języka
+        naturalnego i podejmowanie decyzji. AI stała się
+        <span>integralną częścią naszego codziennego życia</span>, od asystentów
+        głosowych w smartfonach, jak Siri
+        <a href="https://www.apple.com/siri/" target="_blank" style="display: inline-block;">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Apple_Siri_iOS_2024.svg/1200px-Logo_Apple_Siri_iOS_2024.svg.png"
+                alt="Ikona Siri"
+                class="icon-inline"
+                style="cursor: pointer; pointer-events: auto;"
+            />
+        </a>
+        
+
+        czy Google Assistant
+        <a href="https://assistant.google.com/" target="_blank">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRZ7HAhVafeY8GU0tFzrq0YXNHmFALiBwkw&s"
+            alt="Ikona Google Assistant"
+            class="icon-inline"
+          />
+        </a>
+        , po systemy rekomendacyjne na platformach streamingowych, takich jak
+        Netflix
+        <a href="https://www.netflix.com" target="_blank">
+          <img
+            src="https://image.similarpng.com/very-thumbnail/2021/01/Netflix-logo-on-transparent-background-PNG.png"
+            alt="Ikona Netflix"
+            class="icon-inline"
+          />
+        </a>
+        czy Spotify
+        <a href="https://www.spotify.com" target="_blank">
+          <img
+            src="https://p1.hiclipart.com/preview/893/800/19/spotify-for-os-x-el-capitan-spotify-icon-thumbnail.jpg"
+            alt="Ikona Spotify"
+            class="icon-inline"
+          /> </a
+        >. Wspiera nas w
+        <span
+          >planowaniu tras, automatyzacji domowych urządzeń oraz w
+          komunikacji</span
+        >. Obecnie jest o niej bardzo głośno chociażby za sprawą dużych modeli
+        językowych, jak ChatGPT
+        <a href="https://openai.com/chatgpt" target="_blank">
+          <img
+            src="https://freelogopng.com/images/all_img/1681039084chatgpt-icon.png"
+            alt="Ikona Chat GPT"
+            class="icon-inline"
+          />
+        </a>
+        .
+      </p>
+
+      <p>
+        Rozwój uczenia maszynowego i głębokiego uczenia umożliwił tworzenie
+        zaawansowanych modeli, które potrafią
+        <span>samodzielnie rozwiązywać skomplikowane problemy</span>. Sieci
+        neuronowe analizują <span>ogromne ilości danych</span>
+        w obszarach takich jak rozpoznawanie obrazów czy przetwarzanie języka
+        naturalnego. Dzięki temu AI nie tylko przetwarza dane, ale także
+        <span>podejmuje decyzje</span>, wcześniej zarezerwowane dla ludzi.
+      </p>
+
+      <img
+        src="https://ik.imagekit.io/edtechdigit/usaii/content/images/machine-learning-algorithms-for-beginners-with-popular-python-codes.jpeg"
+        alt="Ilustracja przedstawiająca algorytmy uczenia maszynowego"
+      />
+
+      <h2 class="text-gradient">Wyzwania etyczne i społeczne</h2>
+
+      <p>
+        Kluczowym wyzwaniem jest zapewnienie etycznego i odpowiedzialnego
+        rozwoju AI. <span>Należy zwracać uwagę</span> na uprzedzenia w danych
+        treningowych, które mogą prowadzić do dyskryminacji, oraz na wpływ AI na
+        prywatność i nierówności społeczne. Ważne jest opracowanie ram etycznych
+        i mechanizmów nadzoru regulujących rozwój i wdrażanie AI, a także
+        włączanie różnych grup społecznych w ten proces. Transparentność działań
+        firm i instytucji może pomóc w budowaniu zaufania do technologii.
+      </p>
+
+      <img
+        src="https://cdn.prod.website-files.com/64412ffddd39557ab2db1cc6/65ba0fb2eb06920802818730_3-1_hero.webp"
+        alt="Ilustracja dotycząca prywatności danych lub etyki AI"
+      />
+
+      <p>
+        Badacze pracują nad rozwiązaniami umożliwiającymi
+        <span>harmonijne współistnienie ludzi i AI</span>, koncentrując się na
+        tworzeniu systemów wspierających człowieka, a nie go zastępujących.
+        Istotne jest opracowywanie mechanizmów współpracy
+        <span>między człowiekiem a maszyną</span>, co sprzyja synergii i
+        skutecznej komunikacji.
+      </p>
+
+      <h2 class="text-gradient">Automatyzacja i przyszłość rynku pracy</h2>
+
+      <p>
+        Automatyzacja procesów dzięki AI przynosi korzyści w postaci zwiększonej
+        <span>efektywności i redukcji kosztów</span>. Jednak istnieją obawy
+        dotyczące wpływu na rynek pracy i
+        <span>potencjalnego zastąpienia ludzi przez maszyny</span>. Kluczowe
+        jest przemyślane podejście do transformacji rynku pracy, inwestycja w
+        edukację i przekwalifikowanie pracowników, aby mogli oni znaleźć
+        <span>nowe role w gospodarce przyszłości</span>.
+      </p>
+
+      <img
+        src="https://img.freepik.com/premium-photo/robot-is-working-computer-with-hands-keyboard_980928-70265.jpg"
+        alt="Grafika symbolizująca automatyzację lub robotykę w miejscu pracy"
+      />
+
+      <p>
+        Specjaliści powinni być gotowi na ciągłe
+        <span>doskonalenie swoich umiejętności</span>, ucząc się m.in. zasad
+        działania algorytmów AI. Przyszłość pracy będzie wymagać nie tylko
+        umiejętności technicznych, ale także kompetencji miękkich, takich jak
+        kreatywność i zdolność rozwiązywania problemów.
+      </p>
+
+      <p>
+        Nasza zdolność do adaptacji i innowacji zdecyduje o tym, jak
+        <span>AI wpłynie na przyszłość ludzkości</span>. Wspólnie możemy
+        kształtować tę przyszłość, wykorzystując AI dla dobra wszystkich.
+      </p>
+
+      <p>
+        <em
+          >*Tekst opracowany przez AI. W Oxido nie mamy aż tak cukierkowego
+          spojrzenia na sztuczną inteligencję... 😉</em
+        >
+      </p>
+
+      <script>
+        document.querySelectorAll("p, h1, h2").forEach((element) => {
+          element.innerHTML = element.innerHTML.replace(
+            /\b(i|w|z|o|u|na|do|po|ze|pod|bez|za|dla)\b /g,
+            "$1&nbsp;"
+          );
+        });
+      </script>
+    </div>
+  </body>
+</html>

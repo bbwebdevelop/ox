@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oxido/Szablon/bbwebdevelop</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #333;
+        background: radial-gradient(
+            circle at 50% 50%,
+            rgba(140, 69, 255, 0.3),
+            rgba(14, 0, 36, 0.9)
+          ),
+          radial-gradient(
+            circle at 20% 80%,
+            rgba(255, 255, 255, 0.05),
+            transparent 70%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 255, 255, 0.05),
+            transparent 70%
+          );
+        background-color: #0a0b14;
+        line-height: 1.7;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        word-spacing: 0.05em;
+      }
+
+      .text-gradient {
+        font-weight: 600;
+        line-height: 1.15;
+        background: radial-gradient(
+          circle at top left,
+          white 0%,
+          white 70%,
+          rgba(240, 235, 255, 0.9) 85%,
+          rgba(220, 210, 245, 0.8) 100%
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 4em;
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        letter-spacing: -4px;
+        word-spacing: 4px;
+      }
+
+      h2 {
+        font-size: 3.2em;
+        letter-spacing: -3.2px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: #b5b7c9;
+        margin: 15px 0;
+        padding: 0 15px;
+        text-align: left;
+        letter-spacing: -0.02em;
+        line-height: 1.5;
+        margin-bottom: 1.5em;
+        font-weight: 300;
+      }
+
+      em {
+        font-weight: 100;
+        color: #b5b7c985;
+        font-style: normal;
+        letter-spacing: -1px;
+      }
+
+      a {
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      span {
+        -webkit-text-stroke: 0.2px;
+        font-weight: 600;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 1px 0.5px rgba(173, 216, 230, 0.5);
+      }
+
+      .icon-inline {
+        width: 16px;
+        height: 16px;
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.2em;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      a .icon-inline {
+        text-decoration: none;
+        border: none;
+       
+      }
+      a img,
+      a svg {
+        text-decoration: none;
+        border: none;
+      }
+
+      svg {
+        display: inline;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 3.2em;
+          letter-spacing: -3px;
+        }
+        h2 {
+            font-size: 2.5em;
+            letter-spacing: -3px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+                <!--
+           NIE USUNĄŁEM KODU JS PONIŻEJ, PONIEWAŻ TO CZĘŚĆ KOMPLETNEGO SZABLONU.
+PONIŻSZE LINIE USUWAJĄ LITERY SIEROTY Z KOŃCA LINII.
+            -->
+      <script>
+        document.querySelectorAll("p, h1, h2").forEach((element) => {
+          element.innerHTML = element.innerHTML.replace(
+            /\b(i|w|z|o|u|na|do|po|ze|pod|bez|za|dla)\b /g,
+            "$1&nbsp;"
+          );
+        });
+      </script>
+  </body>
+</html>
